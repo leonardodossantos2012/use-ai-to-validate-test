@@ -1,7 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios';
 
-async function getChatCompletion(question: string): Promise<any> {
-  const jsonToValidate = require('../../factories/responseComplex.json');
+async function getChatCompletion(question: string, dataToValidate: JSON): Promise<any> {
   const url = 'https://api.openai.com/v1/chat/completions';
   const headers = {
     'Content-Type': 'application/json',
@@ -14,7 +13,7 @@ async function getChatCompletion(question: string): Promise<any> {
     messages: [
       {
         role: "user",
-        content: JSON.stringify(jsonToValidate) + '\n' + question,
+        content: JSON.stringify(dataToValidate) + '\n' + question,
       }
     ]
   };
