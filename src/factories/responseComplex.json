@@ -1,0 +1,51 @@
+{
+  "id": 12345,
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "address": {
+    "street": "123 Main St",
+    "city": "New York",
+    "state": "NY",
+    "postal_code": "10001"
+  },
+  "phone_numbers": [
+    {
+      "type": "home",
+      "number": "555-555-5555"
+    },
+    {
+      "type": "work",
+      "number": "555-555-5556"
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "ORD123",
+      "products": [
+        {
+          "product_id": 1,
+          "name": "Product A",
+          "price": 10.99
+        },
+        {
+          "product_id": 2,
+          "name": "Product B",
+          "price": 20.49
+        }
+      ]
+    },
+    {
+      "order_id": "ORD124",
+      "products": [
+        {
+          "product_id": 3,
+          "name": "Product C",
+          "price": 15.99
+        }
+      ]
+    }
+  ],
+  "active": true,
+  "membership_level": "premium",
+  "last_login": "2023-10-24T12:34:56Z"
+}
